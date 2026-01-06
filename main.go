@@ -29,7 +29,7 @@ type Result struct {
 
 var (
 	zoneFile   = flag.String("zone", "", "Path to BIND zone file")
-	server     = flag.String("server", "", "DNS server IP address")
+	server     = flag.String("server", "", "DNS server address (IP or hostname)")
 	verbose    = flag.Bool("verbose", false, "Print each record checked")
 	csvOutput  = flag.String("csv", "", "Output results to CSV file")
 	jsonOutput = flag.String("json", "", "Output results to JSON file")
@@ -39,7 +39,7 @@ func main() {
 	flag.Parse()
 
 	if *zoneFile == "" || *server == "" {
-		fmt.Println("Usage: dns-zone-checker -zone <zone-file> -server <dns-server-ip> [-verbose]")
+		fmt.Println("Usage: dns-zone-checker -zone <zone-file> -server <dns-server> [-verbose]")
 		flag.PrintDefaults()
 		os.Exit(1)
 	}

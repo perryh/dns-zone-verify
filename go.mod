@@ -1,4 +1,4 @@
-module github.com/perryh/dns-zone-checker
+module github.com/perryh/dns-zone-verify
 
 go 1.25.5
 

@@ -39,7 +39,7 @@ func main() {
 	flag.Parse()
 
 	if *zoneFile == "" || *server == "" {
-		fmt.Println("Usage: dns-zone-checker -zone <zone-file> -server <dns-server> [-verbose]")
+		fmt.Println("Usage: dns-zone-verify -zone <zone-file> -server <dns-server> [-verbose]")
 		flag.PrintDefaults()
 		os.Exit(1)
 	}

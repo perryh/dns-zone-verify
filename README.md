@@ -11,6 +11,12 @@ A Go tool that verifies DNS records from a BIND zone file against a DNS server. 
 - Print summary of results
 - Verbose mode to see each record checked
 
+## Installation
+
+```bash
+go install github.com/perryh/dns-zone-verify@latest
+```
+
 ## Usage
 
 ```bash
@@ -20,8 +26,10 @@ A Go tool that verifies DNS records from a BIND zone file against a DNS server. 
 ### Command Line Arguments
 
 - `-zone <path>`: Path to the BIND zone file (required)
-- `-server <ip>`: DNS server IP address to check against (required)
+- `-server <host>`: DNS server address (IP or hostname) to check against (required)
 - `-verbose`: Print each record as it's being checked (optional)
+- `-csv <file>`: Output results to CSV file (optional)
+- `-json <file>`: Output results to JSON file (optional)
 
 ## Examples
 
@@ -80,13 +88,6 @@ The tool provides three types of output:
 
 - `0`: All records matched successfully
 - `1`: There were mismatches or errors
-
-## Building
-
-```bash
-go mod tidy
-go build -o dns-zone-verify
-```
 
 ## Example Output
 

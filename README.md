@@ -14,7 +14,7 @@ A Go tool that verifies DNS records from a BIND zone file against a DNS server. 
 ## Usage
 
 ```bash
-./dns-zone-verify -zone <zone-file> -server <dns-server-ip> [-verbose]
+./dns-zone-verify -zone <zone-file> -server <host> [-verbose]
 ```
 
 ### Command Line Arguments

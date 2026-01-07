@@ -76,14 +76,6 @@ The tool supports all current DNS record types (obsolete types excluded):
 **Other:**
 - HIP, EUI48, EUI64
 
-## Output
-
-The tool provides three types of output:
-
-1. **Progress information**: Shows number of records loaded and DNS server being checked
-2. **Differences**: Lists any mismatched records or query errors
-3. **Summary**: Shows total records checked, matches, mismatches, and errors
-
 ### Exit Codes
 
 - `0`: All records matched successfully

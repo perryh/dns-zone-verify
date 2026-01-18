@@ -1,4 +1,4 @@
-# DNS Zone Verify
+# dns-zone-verify
 
 A Go tool that verifies DNS records from a BIND zone file against a DNS server. This is useful when migrating from one DNS server to another to ensure all records were imported correctly.
 
